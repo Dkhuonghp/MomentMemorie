@@ -1,0 +1,55 @@
+:root {
+	--main: #fff4e0;
+	--assort: #ffbd61;
+	--accent: #f99292;
+	--footer: #6598be;
+	--text-color: #707070;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+
+@font-face {
+	font-family: 'Kiwi Maru', serif;
+	src: url(../font/KiwiMaru-Medium.ttf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*::selection {
+	background: var(--accent);
+	color: #fff;
+}
+html,
+body {
+	font-family: 'Kiwi Maru', serif;
+	font-size: 62.5%;
+	line-height: 1.6rem;
+	scroll-behavior: smooth;
+}
+
+section {
+	min-height: 100vh;
+	max-width: 100%;
+	padding: 1rem 6rem;
+	padding-top: 8.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow-x: hidden;
+}
+.btn {
+	margin-bottom: 6rem;
+	background: transparent;
+	border: 4px solid #fff;
+	border-radius: 2rem;
+	color: #fff;
+	font-size: 32px;
+	padding: 2rem 6rem;
+	font-family: inherit;
+	cursor: pointer;
+	transition: 0.5s linear;
+}
+.btn:hover {
+	background: var(--accent);
+}
